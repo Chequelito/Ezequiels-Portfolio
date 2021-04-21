@@ -2,13 +2,14 @@
   --dark: blueviolet;
   --light: aliceblue;
   --navlink-color: lightblue;
+  --basics: Georgia, "Times New Roman", Times, serif;
 }
 
 header {
   background-color: var(--dark);
   color: aliceblue;
   padding: 0px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: var(--basics)
 }
 
 body {
@@ -26,8 +27,14 @@ a {
 article {
   justify-content: row-reverse;
 }
+img {
+  height: 200px;
+  width: 250px;
+}
 
 .topnav {
+  display: flex;
+  flex-direction: row-reverse;
   overflow: hidden;
   background-color: plum;
   margin-top: 0px;
@@ -36,10 +43,27 @@ article {
 article {
   color: beige;
   margin: 40px;
+
+}
+
+.container {
+  height: 400px;
+  width: 250px;
+  font-family: var(--basics);
+  color: var(--light);
+  border-right: 15px solid var(--light);
+  padding: 20px;
+  font-size: 24px;
+  float: left;
+}
+
+.information {
+  display: flex;
+  color: var(--light);
+  padding: 20px;
 }
 
 .row {
-  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
