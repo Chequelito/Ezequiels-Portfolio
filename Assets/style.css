@@ -1,0 +1,61 @@
+:root {
+  --dark: blueviolet;
+  --light: aliceblue;
+  --navlink-color: lightblue;
+}
+
+header {
+  background-color: var(--dark);
+  color: aliceblue;
+  padding: 0px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: slategray;
+  margin: 0;
+}
+
+ul {
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+
+article {
+  justify-content: row-reverse;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: plum;
+  margin-top: 0px;
+}
+
+article {
+  color: beige;
+  margin: 40px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card-column {
+  flex: 0 1 100%;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.code-card {
+  display: flex;
+  flex-direction: column;
+
+}
+.subtitle {
+  justify-content: flex-end;
+  align-content: row-reverse;
+}
