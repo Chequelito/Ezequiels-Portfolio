@@ -6,44 +6,18 @@
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
   background-color: var(--dark);
   color: aliceblue;
-  padding: 0px;
-  font-family: var(--basics)
+  font-family: var(--basics);
+  border: 15px solid green;
 }
 
 body {
   background-color: slategray;
   margin: 0;
-}
-
-ul {
-  text-decoration: none;
-}
-a {
-  text-decoration: none;
-}
-
-article {
-  justify-content: row-reverse;
-}
-img {
-  height: 200px;
-  width: 250px;
-}
-
-.topnav {
-  display: flex;
-  flex-direction: row-reverse;
-  overflow: hidden;
-  background-color: plum;
-  margin-top: 0px;
-}
-
-article {
-  color: beige;
-  margin: 40px;
-
+border: 15px solid purple;
 }
 
 .container {
@@ -58,28 +32,22 @@ article {
 }
 
 .information {
+  height: 400px;
+  padding: 35px;
   display: flex;
   color: var(--light);
-  padding: 20px;
 }
 
-.row {
-  flex-direction: row;
-  flex-wrap: wrap;
+img {
+  height: 200px;
+  width: 250px;
 }
 
-.card-column {
-  flex: 0 1 100%;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.code-card {
+.work {
   display: flex;
-  flex-direction: column;
-
+  border: 15px dotted pink;
 }
-.subtitle {
-  justify-content: flex-end;
-  align-content: row-reverse;
+h2,
+h3 {
+padding: 30px;
 }
