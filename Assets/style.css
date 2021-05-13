@@ -1,85 +1,341 @@
+* {
+  
+  font-family: var(--basics);
+  text-shadow:  0 0 5px var(--light);
+  color: var(--font);
+  cursor: default;
+  margin: 0;
+  
+}
+
+
+
 :root {
-  --dark: blueviolet;
-  --light: aliceblue;
+  --dark: #bfb4ff;
+  --light: #7e68ff;
+  --font: #ffffb2;
   --navlink-color: lightblue;
   --basics: Georgia, "Times New Roman", Times, serif;
-}
+  --card: 	#b2dcf9;}
 
-header {
-  background-color: var(--dark);
-  color: aliceblue;
-  padding: 0px;
-  font-family: var(--basics)
-}
+
+
+
+
 
 body {
-  background-color: slategray;
-  margin: 0;
+  background-color: var(--light);
 }
 
-ul {
-  text-decoration: none;
-}
-a {
-  text-decoration: none;
+main section p {
+  font-size: 2rem;
+  margin-top: 50px;
 }
 
-article {
-  justify-content: row-reverse;
-}
-img {
-  height: 200px;
-  width: 250px;
+h1,
+h2 {
+  color: var(--font);
+
 }
 
-.topnav {
+h2{
+  font-size: 1.5rem;
+}
+.flex-container {
   display: flex;
-  flex-direction: row-reverse;
-  overflow: hidden;
-  background-color: plum;
-  margin-top: 0px;
-}
-
-article {
-  color: beige;
-  margin: 40px;
-
-}
-
-.container {
-  height: 400px;
-  width: 250px;
-  font-family: var(--basics);
-  color: var(--light);
-  border-right: 15px solid var(--light);
-  padding: 20px;
-  font-size: 24px;
-  float: left;
-}
-
-.information {
-  display: flex;
-  color: var(--light);
-  padding: 20px;
+  justify-content: center;
 }
 
 .row {
-  flex-direction: row;
+  align-items: stretch;
+}
+
+#column {
+  flex-direction: column;
+}
+
+
+header {
+  color: var(--dark);
+  text-decoration: none;
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin: 0;
+  font-size: 2rem;
+  justify-content: space-between;
+  background-image: url(./anton-maksimov-juvnsky-Ts6mAm6T_Cw-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: var(--card) solid 5px;
+}
+
+nav a {
+  color: var(--font);
+  background-color: var(--card);
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  margin: 20px;
+  
+}
+
+
+
+main section p {
+  padding: 180px 50px 50px 50px;
+}
+
+
+
+
+div {
+  background-color: var(--dark);
+  height: 225px;
+  width: 350px;
+  margin: 30px;
+  position: relative;
+  border: solid 5px var(--card);
+  border-radius: 20px;
+}
+
+#workflex {
   flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 115px;
 }
 
-.card-column {
-  flex: 0 1 100%;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
+header img {
+  width: 25%;
+  height: 25%;
 }
 
-.code-card {
+
+div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  margin: 0;
+  object-fit: cover;
+}
+
+
+.imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+  padding: 5px;
+  background-color: var(--dark);
+  border-radius: 10px 10px;
+}
+
+#showcase {
+  width: 100%;
+}
+
+
+
+
+.sidebar {
+  padding: 20px;
+  flex: 2 4 1500px;
+  min-width: 15%;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
+  text-decoration: underline 4px var(--card);
+}
+
+aside h2 {
+  margin: 200px 20px;
+}
+
+#contact {
+  text-decoration: underline 4px var(--dark)
+}
+
+#column {
+border-left: solid 10px var(--card) ;
+}
+
+footer {
+  padding: 60px;
+  border-top: solid 5px var(--card);
+  display: flex;
+  align-items: center;
+}
+
+footer p {
+  margin-left: 20%;
+}
+
+footer li a {
+  text-decoration: none;
 
 }
-.subtitle {
-  justify-content: flex-end;
-  align-content: row-reverse;
+
+
+li {
+  display: block;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  header {
+    font-size: 1.5rem;
+  }
+  nav a {
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 895px) {
+  header {
+    font-size: 1rem;
+  }
+  nav a {
+    padding: 6px;
+  }
+  #workflex {
+    padding-top: 115px;
+  }
+ 
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    font-size: 0.75rem;
+  }
+  nav a {
+    padding: 4px;
+  }
+
+  header img {
+    width: 20%;
+    height: 20%;
+  }
+  nav a {
+    margin: 16px;
+  }
+  footer {
+    font-size: smaller;
+  }
+
+  main section p {
+    font-size: smaller;
+    padding: 150px 30px 30px;
+  }
+
+  aside h2 {
+    margin: 100px 20px;
+    font-size: 1rem;
+  }
+
+  div {
+    height: 180px;
+    width: 180px;
+    margin: 20px;
+  }
+
+  #workflex {
+    padding-top: 80px;
+  }
+
+  .imgtext {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav a {
+    padding: 2px;
+    margin: 12px;
+  }
+  aside h2 {
+    margin: 80px 10px;
+    font-size: 0.75rem;
+  }
+  footer {
+    font-size: x-small;
+  }
+  main section p {
+    font-size: x-small;
+    padding: 110px 20px 20px;
+  }
+  div {
+    height: 120px;
+    width: 120px;
+    margin: 10px;
+  }
+  #workflex {
+    padding-top: 75px;
+  }
+
+  .imgtext {
+    font-size: smaller;
+  }
+  header img {
+    width: 15%;
+    height: 15%;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  .sidebar {
+    font-size: 9px;
+  }
+  footer {
+    font-size: xx-small;
+  }
+  main section p {
+    font-size: xx-small;
+    padding: 70px 10px 10px;
+  }
+  div {
+    height: 100px;
+    width: 100px;
+    border: solid var(--card) 3px;
+    margin: 5px;
+  }
+  #workflex {
+    padding-top: 50px;
+  }
+
+  .imgtext {
+    font-size: x-small;
+  }
+  header img {
+    width: 10%;
+    height: 10%;
+  }
+  nav a {
+    margin: 8px;
+  }
+}
+
+@media screen and (max-width: 407px) {
+  header {
+    font-size: 0.5rem;
+  }
+  nav a {
+    margin: 4px;
+  }
+  div {
+    height: 75px;
+    width: 75px;
+    border: solid var(--card) 1px;
+  }
+  #workflex {
+    padding-top: 25px;
+  }
+
+  .imgtext {
+    font-size: xx-small;
+  }
+
 }

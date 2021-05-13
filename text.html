@@ -2,88 +2,101 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./Assets/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./Assets/style.css" />
+    <link rel="external" href="./assets/flexbox webpage/" />
+
 </head>
 
 <body>
-    <Header>
-        <h1 class="topnav">
+    <header>
 
-            <a href="#resume">Resume </a>
-            <a href="#contact">Contact </a>
-            <a href="#about">About </a>
-            <a href="#work">Work </a>
-            <a class="active" href="#home">Home </a>
-        </h1>
-        <p class="subtitle">What a cool website!</p>
-    </Header>
-    <main>
-        <h2>
-            <section class="container information">About me</section>
-            <section class="information">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, corporis
-                inventore
-                explicabo, eum doloremque adipisci dolorem ducimus recusandae placeat rem nam fugiat quibusdam vel natus
-                nihil. Sed aliquam, a animi exercitationem suscipit, aperiam omnis eaque consectetur quam rerum
-                voluptates
-                voluptatum, itaque eveniet recusandae molestias amet.</section>
-        </h2>
-        <h3 class="information">
-            <section class="row">
-                <div class="card-column">
-                    <div class="card">
-                        <h2 class="card-header"><a rel="stylesheet" href="https://www.google.com/"><img
-                                    src="./Assets/chalkboard1.jpeg"></a>
-                        </h2>
-                        <div class="card-body">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, odio.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="row">
-                <div class="card-column">
-                    <div class="card">
-                        <h2 class="card-header"><a rel="stylesheet" href="https://www.placekitten.com/"><img
-                                    src="./Assets/trash.jpg"></a>
-                        </h2>
-                        <div class="card-body">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, odio.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="row">
-                <div class="card-column">
-                    <div class="card">
-                        <h2 class="card-header"><a rel="stylesheet" href="https://www.facebook.com/"><img
-                                    src="./Assets/hasan-almasi-OwqLxCvoVxI-unsplash.jpg"></a>
-                        </h2>
-                        <div class="card-body">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, odio.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="row">
-                <div class="card-column">
-                    <div class="card">
-                        <h2 class="card-header"><a rel="stylesheet" href="https://www.cracked.com/"><img
-                                    src="./Assets/94094370_915434125575757_6167146817386446848_n.jpg"></a>
-                        </h2>
-                        <div class="card-body">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, odio.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </h3>
 
+        <h1>Ezequiel</h1>
+
+
+
+        <nav>
+            <a class="nav" href="#aboutme">About Me</a>
+            <a class="nav" href="#work">Work</a>
+            <a class="nav" href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main class="flex-container row">
+
+
+        <aside class="sidebar">
+            <h2 id="aboutme">About Me</h2>
+            <h2 id="work">Work</h2>
+        </aside>
+
+        <section id="column" class="flex-container">
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ducimus quibusdam? Amet, porro
+                maxime, iusto, aliquam ipsam rem alias laboriosam vel iste tenetur fuga. Dolorem ut ab minus libero
+                ratione?
+            </p>
+
+
+            <section id="workflex" class="flex-container">
+                <div id="showcase">
+                    <a href="https://chequelito.github.io/theDailyDive/">
+                        <img src="./Assets/Screenshot (64).png" alt="placeholder" />
+                    </a>
+                    <h3 class="imgtext">The Daily Dive</h3>
+                </div>
+
+                <div>
+                    <a href="https://www.google.com">
+                        <img src="./Assets/94094370_915434125575757_6167146817386446848_n.jpg" alt="placeholder" />
+                    </a>
+                    <h3 class="imgtext">Lesser Know Project</h3>
+                </div>
+                <div>
+                    <a href="./assets/flexbox webpage/index.html">
+                        <img src="https://images.unsplash.com/photo-1503424886307-b090341d25d1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80"
+                            alt="placeholder" />
+                    </a>
+                    <h3 class="imgtext">Something</h3>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com">
+                        <img src="./Assets/hasan-almasi-OwqLxCvoVxI-unsplash.jpg" alt="placeholder" />
+                    </a>
+                    <h3 class="imgtext">And Another thing</h3>
+                </div>
+                <div>
+                    <a href="./Assets/final resume.pdf">
+                        <img src="./Assets/chalkboard1.jpeg" alt="resume" />
+                    </a>
+                    <h3 class="imgtext">Resume</h3>
+                </div>
+            </section>
     </main>
 
+
+    <footer>
+        <h2 id="contact">Contact</h2>
+        <br>
+        <ol>
+            <li>Ezequiel</li>
+            <br>
+            <li>thebearginger@gmail.com</li>
+            <br>
+            <li><a href="https://https://github.com/Chequelito">GitHub</a></li>
+            <br>
+            <li><a href="https://www.https://www.linkedin.com/in/zeke-hearera-8b099020b/">LinkedIn</a></li>
+        </ol>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
