@@ -24,7 +24,8 @@
 
 
 body {
-  background-color: var(--light);
+  background-image: linear-gradient(to bottom right, var(--light) , white
+  );
 }
 
 main section p {
@@ -76,11 +77,12 @@ header {
 
 nav a {
   color: var(--font);
-  background-color: var(--card);
+  background: rgba(137,196, 244, 0.6);
   border-radius: 10px;
-  padding: 10px;
+  padding: 3px;
   text-decoration: none;
   margin: 20px;
+  
   
 }
 
@@ -101,6 +103,10 @@ div {
   position: relative;
   border: solid 5px var(--card);
   border-radius: 20px;
+}
+
+div:hover {
+  box-shadow: 0 0 10px var(--font);
 }
 
 #workflex {
