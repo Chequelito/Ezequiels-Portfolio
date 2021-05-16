@@ -134,13 +134,14 @@ div img {
   position: absolute;
   bottom: 15px;
   left: 10px;
-  padding: 5px;
+  padding: 2px;
   background-color: var(--dark);
-  border-radius: 10px 10px;
+  border-radius: 5px 5px;
+  box-shadow: 0 0 10px var(--navlink-color);
 }
 
 #showcase {
-  width: 100%;
+  width: 87%;
 }
 
 
